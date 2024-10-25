@@ -22,7 +22,7 @@ import seaborn as sns
 
 
 
-df = pd.read_csv("dataset\books.csv", on_bad_lines = 'skip')
+df = pd.read_csv(r"dataset/books.csv", on_bad_lines = 'skip')
 
 
 
@@ -49,9 +49,9 @@ df['year'].min()
 df['year'].max()
 
 
-df.to_csv('dataset\cleaned_data.csv',index=False)
+df.to_csv(r'dataset/cleaned_data.csv',index=False)
 
-df=pd.read_csv('dataset\cleaned_data.csv')
+df=pd.read_csv(r'dataset/cleaned_data.csv')
 
 df[df['year'] == 2020][['title', 'authors','average_rating','language_code','publisher' ]]
 
