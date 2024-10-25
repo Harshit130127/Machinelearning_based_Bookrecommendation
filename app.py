@@ -10,7 +10,7 @@ from Model.model import BookRecommender, recommend_by_rating, recommend_by_publi
 app = Flask(__name__)
 
 # Load dataset
-df = pd.read_csv('dataset\cleaned_data.csv')
+df = pd.read_csv(r'dataset/cleaned_data.csv')
 print(df.head(5))
 
 # Configure logging to write to app.log
